@@ -13,7 +13,7 @@
 
 <template>
   <div>
-    <h1>Benvenuto nei miei progetti</h1>
+    <h1>Benvenuto nel mio Boolfolio</h1>
   <AppMain />
   </div>
 </template>
