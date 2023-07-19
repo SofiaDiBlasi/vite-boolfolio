@@ -4,18 +4,21 @@
   export default{
     data(){
       
-    },
-    components:{
-      AppMain
     }
   }
 </script>
 
 <template>
-  <div>
-    <h1>Benvenuto nel mio Boolfolio</h1>
-  <AppMain />
-  </div>
+  <header>
+    <a href="/">Home</a>
+    <br>
+    <a href="/about-me">About me<menu type="context"></menu></a>
+    <a href="/projects">Projects</a>
+  </header>
+
+  <router-view></router-view>
+
+
 </template>
 
 <style scoped>
