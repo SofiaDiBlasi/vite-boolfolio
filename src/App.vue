@@ -5,9 +5,10 @@
     data(){
       return {
         navLinks: [
-          { route: "home", label: "Home"},
-          { route: "about", label: "About me"},
-          { route: "projects", label: "Projects"}
+          { label: "Home", to: {name: "home"}},
+          { label: "About me", to: {name: "about"}},
+          { label: "Projects", to: {name: "projects"}},
+          { label: "Error", to: {name: "error", params: {code: "404"}} }
         ]
       }
     }
@@ -17,7 +18,7 @@
 <template>
   <header>
     <template v-for="link in navLinks">
-      <router-link :to="{name: link.route}">{{ link.label }}</router-link>
+      <router-link :to="link.to">{{ link.label }}</router-link>
     </template>
   </header>
 

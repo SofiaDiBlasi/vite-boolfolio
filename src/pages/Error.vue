@@ -1,6 +1,6 @@
 <script>
     export default{
-        name :"ErrorNotFound",
+        name :"Error",
         data(){
             return {
                
@@ -11,6 +11,7 @@
 
 <template>
     <section>
-        <h1>404 Not Found</h1>
+        <h1>Error !!!! {{ $route.params.code }}</h1>
+        <p>Oh no ! Sembra sia successo qualcosa...</p>
     </section>
 </template>
